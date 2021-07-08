@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 46px;
+    background-color: #191919;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.post-container {
+    display: block;
+    margin: 20px;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 3px 3px 15px rgb(212, 212, 212);
+    padding-bottom: 10px;
+}
+
+.post-container:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+}
+
+.text-content {
+    padding: 10px;
+}
+
+.title {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 50px;
+    color: #ff2e2e;
+}
+
+.descricao {
+    margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+}
