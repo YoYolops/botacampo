@@ -1,3 +1,5 @@
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -37,7 +39,14 @@ header {
 
 .post-container:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    animation-name: escala;
+    animation-duration: 0.2s;
+}
+
+@keyframes escala {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
 }
 
 .main-container {
