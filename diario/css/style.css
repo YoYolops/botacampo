@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  color: #111111;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.website {
+  width: 1000px;
+  margin: 0 auto 20px;
+}
+
+.topo {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu .item {
+  background-color: #ffffff;
+  padding: 20px;
+  flex-grow: 1;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  border-left: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu .item:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: 1px solid #eaeaea;
+}
+
+.menu .item:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.menu .item.selecionado {
+  background-color: #aa4653;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.menu .item:not(.selecionado):hover {
+  background-color: #b12c3e;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.posts .post {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  margin-top: 20px;
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.posts .post strong {
+  word-break: break-all;
+}
+
+.posts .post strong:hover {
+  text-decoration: underline;
+  color: #333333;
+}
+
+.posts .post img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 298px;
+  height: 184px;
+  object-fit: cover;
+  /* como a imagem original não tem dimensões 298x184
+   * ou outra resolução com mesma proporção, ela ficaria
+   * esticada. o object-fit: cover impede que ela seja
+   * esticada, e corta a imagem de forma que caiba nas
+   * dimensões especificadas aqui no CSS */
+}
+
+#mobile-version-logo {
+  display: none;
+}
+
+.posts .post:hover {
+  box-shadow: 0px 0px 10px 0px #eeeeee;
+}
+
+.posts .post .conteudo {
+  padding: 20px;
+}
+
+.posts .post .titulo {
+  color: #aa4653;
+  font-size: 29px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1015px) {
+  .website {
+    width: 90%;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .posts {
+    justify-content: space-evenly;
+  }
+
+  .post {
+    min-width: 45%;
+  }
+
+  .posts .post img {
+    width: 100%;
+  }
+
+  .item.selecionado, .item {
+    flex-shrink: 1;
+    min-width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #mobile-version-logo {
+    display: block;
+  }
+
+  #desktop-version-logo {
+    display: none;
+  }
+
+  .post {
+    min-width: 95%;
+  }
+}
