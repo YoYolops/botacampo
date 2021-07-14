@@ -17,6 +17,7 @@ body {
 .topo {
   font-size: 48px;
   font-weight: bold;
+  display: flex;
 }
 
 .menu {
@@ -119,7 +120,16 @@ body {
     width: 90%;
   }
 
+  .topo {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 2px solid #fafafa;
+  }
+
   .menu {
+    margin-top: 94px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -131,7 +141,7 @@ body {
   }
 
   .post {
-    min-width: 45%;
+    width: 50% !important;
   }
 
   .posts .post img {
@@ -140,20 +150,34 @@ body {
 
   .item.selecionado, .item {
     flex-shrink: 1;
-    min-width: 95%;
+    width: 95% !important;
   }
-}
 
-@media screen and (max-width: 800px) {
   #mobile-version-logo {
-    display: block;
+    display: flex;
   }
 
   #desktop-version-logo {
     display: none;
   }
+}
 
+@media screen and (max-width: 800px) {
   .post {
-    min-width: 95%;
+    width: 100% !important;
+  }
+
+  .topo {
+    width: 100%;
+  }
+
+  #mobile-version-logo {
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #mobile-version-logo {
+    width: 90%;
   }
 }

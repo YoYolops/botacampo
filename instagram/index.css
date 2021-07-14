@@ -1,0 +1,124 @@
+/* ESTILIZAÇÂO DA TOP BAR */
+body {
+    width: 100vw;
+    background-color: #FAFAFA;
+}
+
+.top-bar {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.top-bar-centralizer {
+    width: 100%;
+    height: 100%;
+    max-width: 975px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 25%;
+    height: 100%;
+}
+
+.logo img {
+    width: 103px;
+    height: 29px;
+}
+
+.search {
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 215px;
+    height: 28px;
+    border-radius: 3px;
+}
+
+.navigation-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 222px;
+    height: 25px;
+    padding: 0px 0px 0px 24px;
+}
+
+#profile-pic-container {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+}
+
+#profile-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+}
+
+/* FIM DA ESTILIZAÇÃO DA TOP BAR */
+
+/* ########################################################## */
+
+/* ESTILIZAÇÂO DO COPOR DA PÀGINA */
+
+.main-content-container {
+    width: 100%;
+    max-width: 935px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main-section {
+    width: 100%;
+    max-width: 614px;
+    padding-top: 30px;
+    margin-top: 54px;
+}
+
+.stories-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 614px;
+    height: 118px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+}
+
+.story-ico {
+    padding: 10px;
+}
+
+.suggestions-container {
+    margin: 0 auto;
+    margin-top: 54px;
+}

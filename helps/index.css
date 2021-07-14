@@ -1,0 +1,36 @@
+.container {
+    /* g1 ge gshow tech vídeos */
+  
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 740px;
+    height: 35px;
+    left: 357.5px;
+    top: 36.5px;
+    word-spacing: 25px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: -0.065em;
+  }
+
+  h3 {
+      margin: 20px;
+  }
+
+  nas divs do style so tem a cor
+  .g1 {
+    color: #a80001;
+  }
+  .ge {
+    color: #06aa48;
+  }
+  .gshow {
+    color: #ff7f00;
+  }
+  .tech {
+    color: #666666;
+  }
