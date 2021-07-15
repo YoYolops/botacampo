@@ -12,7 +12,7 @@ const githubUserNames = [
 const gbUserNamesToSmallImages = [
     "0ldProgrammer", "carlmnm", "bruch0",
     "wallacemaxters", "igor-rib-souza", "hereismari",
-    "Fabicaneyu",, "hkotsubo"
+    "Fabicaneyu", "hkotsubo"
 ]
 
 const baseUrl = "https://api.github.com/users/"
