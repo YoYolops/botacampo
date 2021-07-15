@@ -1,7 +1,12 @@
+:root {
+    --lightGrey: #FAFAFA;
+    --borderColor:  #DBDBDB;
+}
+
 /* ESTILIZAÇÂO DA TOP BAR */
 body {
     width: 100vw;
-    background-color: #FAFAFA;
+    background-color: var(--lightGrey);
 }
 
 .top-bar {
@@ -11,7 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    border-bottom: 1px solid #DBDBDB;
+    border-bottom: 1px solid var(--borderColor);
     position: fixed;
     top: 0;
     left: 0;
@@ -43,8 +48,8 @@ body {
 }
 
 .search {
-    background-color: #FAFAFA;
-    border: 1px solid #DBDBDB;
+    background-color: var(--lightGrey);
+    border: 1px solid var(--borderColor);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +111,7 @@ body {
     width: 100%;
     max-width: 614px;
     height: 118px;
-    border: 1px solid #DBDBDB;
+    border: 1px solid var(--borderColor);
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -129,7 +134,7 @@ body {
     width: 100%;
     background-color: #fff;
     border-radius: 3px;
-    border: 1px solid #DBDBDB;
+    border: 1px solid var(--borderColor);
 }
 
 .feed-post header {
@@ -144,8 +149,50 @@ body {
     display: flex;
 }
 
+.image-itself {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
 .feed-post > img {
     min-width: 100%;
+}
+
+.post-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+    padding: 0px 10px;
+}
+
+.post-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post-menu ul li {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.comments-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 20px;
+}
+
+.comments-info img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 4px;
 }
 
 .suggestions-container {

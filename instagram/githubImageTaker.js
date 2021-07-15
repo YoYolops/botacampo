@@ -9,6 +9,12 @@ const githubUserNames = [
     "andriellyll", "leleoveiga", "hadrizia", "gabrielhdof"
 ]
 
+const gbUserNamesToSmallImages = [
+    "0ldProgrammer", "carlmnm", "bruch0",
+    "wallacemaxters", "igor-rib-souza", "hereismari",
+    "Fabicaneyu",, "hkotsubo"
+]
+
 const baseUrl = "https://api.github.com/users/"
 
 /**
@@ -29,10 +35,14 @@ async function getImageUrl(nickName) {
  * Função que cria tags <img /> dinamicamente
  * 
  * @param {Array} nicksList Lista com nomes de usuários
- * @param {String} parentId identificador da tag que será pai das <img />
+ * @param {String} parentClassName class da tag que será pai das <img />
  * @returns {void}
  */
-async function imgTagCreator(nicksList, parentClassName) {
+async function imgTagCreator(nicksList,
+                             parentClassName,
+                             indexToInsertBefore,
+                             addClassName) 
+{
     let imgsParent = document.getElementsByClassName(parentClassName);
 
     for(let i = 0; i < imgsParent.length; i++) {
@@ -40,9 +50,14 @@ async function imgTagCreator(nicksList, parentClassName) {
 
         let newImage = document.createElement("img")
         newImage.src = srcAttribute
+        
+        if(addClassName) {
+            newImage.className = addClassName
+        }
 
-        imgsParent[i].insertBefore(newImage, imgsParent[i].children[1])
+        imgsParent[i].insertBefore(newImage, imgsParent[i].children[indexToInsertBefore])
     }
 }
 
-imgTagCreator(githubUserNames, "feed-post")
+imgTagCreator(githubUserNames, "feed-post", 1, false)
+imgTagCreator(gbUserNamesToSmallImages, "post-header-left", 0, "image-itself")
