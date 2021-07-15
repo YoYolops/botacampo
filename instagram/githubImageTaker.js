@@ -19,6 +19,7 @@ const baseUrl = "https://api.github.com/users/"
 
 /**
  * Função que coleta url de imagem de perfil do github
+ * Função pura
  * 
  * @example getImageUrl("YoYolops") // "https://avatars.githubusercontent.com/u/66336628?v=4"
  * 
@@ -32,7 +33,7 @@ async function getImageUrl(nickName) {
 }
 
 /**
- * Função que cria tags <img /> dinamicamente
+ * Função que cria tags <img /> dinamicamente (efeito colateral no DOM, impura)
  * 
  * @param {Array} nicksList Lista com nomes de usuários
  * @param {String} parentClassName class da tag que será pai das <img />
@@ -62,3 +63,4 @@ async function imgTagCreator(nicksList,
 imgTagCreator(githubUserNames, "feed-post", 1, false)
 imgTagCreator(gbUserNamesToSmallImages, "post-header-left", 0, "image-itself")
 imgTagCreator(gbUserNamesToSmallImages, "story-ico", 0, false)
+imgTagCreator(gbUserNamesToSmallImages, "suggested-profile-left-section", 0, "suggested-profile-pic")
