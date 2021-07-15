@@ -112,13 +112,50 @@ body {
     align-items: center;
     justify-content: left;
     padding: 10px;
+    margin-bottom: 24px;
 }
 
 .story-ico {
     padding: 10px;
 }
 
+.feed-container {
+    width: 100%;
+    max-width: 614px;
+    background-color: inherit;
+}
+
+.feed-post {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+}
+
+.feed-post header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.feed-post header div {
+    display: flex;
+}
+
+.feed-post > img {
+    min-width: 100%;
+}
+
 .suggestions-container {
+    width: 293px;
     margin: 0 auto;
     margin-top: 54px;
+    padding-top: 30px;
+}
+
+.suggestion-header {
+    width: 100%;
+    background-color: inherit;
 }

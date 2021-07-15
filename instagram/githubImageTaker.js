@@ -41,8 +41,8 @@ async function imgTagCreator(nicksList, parentClassName) {
         let newImage = document.createElement("img")
         newImage.src = srcAttribute
 
-        imgsParent[i].insertBefore(newImage, imgsParent[i].children[2])
+        imgsParent[i].insertBefore(newImage, imgsParent[i].children[1])
     }
 }
 
-imgTagCreator(githubUserNames, "images")
+imgTagCreator(githubUserNames, "feed-post")
